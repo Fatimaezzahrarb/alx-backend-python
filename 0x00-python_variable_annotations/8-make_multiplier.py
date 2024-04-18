@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-"""functions"""
-from typing import Callable, Iterator, Union, Optional, List, Tuple
+'''Task 8.
+'''
+from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
-   
-    def f(n: float) -> float:
-        """ multiplies a float """
-        return float(n * multiplier)
-
-    return f
+    '''Create a multiplier function.
+    '''
+    return lambda x: x * multiplier
