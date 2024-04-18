@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-
-from typing import Mapping, MutableMapping, Sequence, Iterable, List, Tuple
+'''Task 9.
+'''
+from typing import Iterable, List, Sequence, Tuple
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-    """ Element """
+    '''Compute length of a list of the sequences.
+    '''
     return [(i, len(i)) for i in lst]
